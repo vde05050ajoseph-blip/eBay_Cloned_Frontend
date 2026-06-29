@@ -259,6 +259,49 @@ display: none;
 }
 
 
+.fashions{
+    display: flex;
+    position: absolute;
+display: none;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+
+.collects{
+    display: flex;
+    position: absolute;
+display: none;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.sports{
+    display: flex;
+    position: absolute;
+display: none;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.healths{
+    display: flex;
+    position: absolute;
+    display: none;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.industrys{
+    display: flex;
+    position: absolute;
+display: none;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.homes{
+    display: flex;
+    position: absolute;
+display: none;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
 .slide_1{
       background-image: 
     linear-gradient(to right, rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0)), 
@@ -684,6 +727,11 @@ footer a{
     display: block;
 }
 
+@media (max-width: 1325px) {
+    .hover_wrapper{
+        display: none;
+    }
+}
 
 @media (max-width:1135px) {
     .bottom_header .fa-angle-down{
