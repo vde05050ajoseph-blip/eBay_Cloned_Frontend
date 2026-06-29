@@ -198,7 +198,7 @@ height: max-content;
 .slide_1{
       background-image: 
     linear-gradient(to right, rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0)), 
-    url(/Assets/s-l1600.webp);
+    url(https://i.ebayimg.com/images/g/s9IAAeSwesFpusZk/s-l1600.webp);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -206,7 +206,7 @@ height: max-content;
     height: 60vh;
     align-items: end;
     width: 100vw;
-    background-color: transparent !important;
+    background-color: black;
 }
 
 .slide_3{
