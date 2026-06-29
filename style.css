@@ -166,7 +166,7 @@ header{
 
 
 .middle_header button:hover{
-    background-color:rgb(8, 8, 221);
+    background-color:rgb(6, 6, 194);
     transition: background-color .2s ease-in-out;
 }
 
