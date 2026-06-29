@@ -52,6 +52,15 @@ header{
     color: black;
 }
 
+.side_2{
+    display: flex;
+    gap: 14px;
+}
+
+.hamburger{
+    display: none;
+}
+
 .deals li, .side_2 li{
     display: inline-block;
 }
@@ -396,6 +405,7 @@ li{
     margin-top: 40px;
 }
 
+
 .shop_world .text_wrap .coup a{
     color: white;
     text-decoration: none;
@@ -407,7 +417,79 @@ li{
 
 .coupon a{
     background-color: transparent;
-    
+    color: #27252c;;
+}
+
+
+.todays_wrapper{
+display: flex;
+flex-direction: column;
+margin: 0 auto;
+width: 90%;
+justify-content: center;
+padding-top: 50px;
+}
+
+
+.deals_wrapper{
+    width: 19vw;
+}
+
+.deals_wrapper p{
+    display: inline-block;
+    font-weight: 900;
+    font-size: clamp(0.8rem, 1.1vw, 2rem);
+}
+.deals_wrapper p:last-child {
+    font-size: 0.8rem;
+    font-weight: normal;
+    text-decoration: line-through;
+    color: grey;
+}
+
+.deals_wrapper li{
+margin-bottom: 8px;
+margin-top: 7px;
+}
+
+.deals_wrapper li a{
+    text-decoration: none;
+    color: black;
+    width: fit-content;
+    font-size: clamp(0.5rem, 1.1vw, 2rem);
+}
+
+.deals_wrapper li a:hover{
+    text-decoration: underline;
+}
+
+.todays_deals{
+display: flex;
+gap: 15px;
+    padding: 20px 0px;
+    overflow-x: hidden;
+}
+
+.todays_deals:hover{
+    overflow-x: scroll;
+}
+
+.image_deal{
+    border-radius: 20px;
+    width: max-content;
+    overflow: hidden;
+   
+}
+
+.image_deal img{
+    width: 19vw;
+    height: auto;
+    object-fit: cover;
+}
+
+.image_deal:hover {
+    transform: scale(1.07); 
+      transition: all .5s ease-in-out; 
 }
 
 .footer_wrapper{
@@ -485,15 +567,9 @@ footer a{
     color: rgb(8, 8, 109);
 }
 
-.copyright .fa-info{
-    font-size: 0.6rem;
-    border: 1px solid blue;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-left: 5px;
-    padding-right: 4px;
-    text-align: center;
-    border-radius: 50%;
+.copyright li:last-child img{
+    transform: translateY(4px);
+    width: 17px;
 }
 
 .copyright {
@@ -503,6 +579,40 @@ footer a{
 
 .media_footer{
     display: none;
+}
+
+.scroll{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 10px;
+    right: 7px;
+    gap: 20px;
+}
+
+.scroll a{
+    text-decoration: none;
+    color: black;
+}
+
+.scroll i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 35px;
+    width: 35px;
+     border-radius: 50%;
+    background-color: white;
+    box-shadow: 0px 0px 4px grey;
+}
+
+.bookmark{
+    display: none;
+}
+
+.bookmark.hidden{
+    display: block;
 }
 
 
@@ -635,6 +745,21 @@ grid-template-rows: auto;
     font-size: 0.8rem;
 }
 
+.side_2 li:nth-child(1){
+display: none;
+}
+
+.shopping_world, .shop_world{
+    height: max-content;
+}
+
+.shopping_world img{
+display: none;
+}
+
+.shop_world img{
+display: none;
+}
 }
 
 @media (max-width:755px) {
@@ -667,7 +792,23 @@ grid-template-rows: auto;
 }
 
 .media_footer{
-    display: flex;
+    display: inline-block;
+    
+}
+
+.media_footer li{
+    display: inline-block;
+    line-height: 30px;
+    margin-inline: 10px;
+}
+
+.media_footer a{
+    text-decoration: none;
+    color: grey;
+}
+
+.media_footer a:hover{
+    text-decoration: underline;
 }
 
 }
@@ -679,6 +820,10 @@ grid-template-rows: auto;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
 
+}
+
+.hamburger{
+    display: block;
 }
 
 .image_shop img{
@@ -723,7 +868,7 @@ display: none;
 .shopping_easy{
     margin: 0px;
    display: flex;
-   height: 20vh;
+   height: max-content;
    justify-content: center;
    flex-direction: column;
    align-items: flex-start;
@@ -738,6 +883,11 @@ display: none;
 
 .shopping_easy .text_Wrap{
     padding-top: -50px;
+}
+
+.shopping_easy li {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .shop_world img{
@@ -765,7 +915,7 @@ display: none;
 }
 
 .side_2 li:nth-child(4){
-display: inline-block;
+display: none;
 }
 
 .bottom_header li:nth-child(5){
@@ -777,4 +927,7 @@ display: inline-block;
     height: auto;
 }
 
+.deals_wrapper li{
+    line-height: 10px;
+}
 }
