@@ -8,3 +8,29 @@ window.addEventListener('scroll', () => {
     targetElement.classList.remove('hidden');
   }
 });
+
+
+
+const trigger = document.querySelector('.electronic');
+const hiddenImg = document.querySelector('.electronics');
+
+trigger.addEventListener('mouseenter', () => {
+  hiddenImg.style.display = 'inline-block'; // Or toggle a CSS class
+});
+
+trigger.addEventListener('mouseleave', () => {
+  hiddenImg.style.display = 'none';
+});
+
+
+
+const trigge = document.querySelector('.motor');
+const hiddenIm = document.querySelector('.motors');
+
+trigge.addEventListener('mouseenter', () => {
+  hiddenIm.style.display = 'inline-block'; // Or toggle a CSS class
+});
+
+trigge.addEventListener('mouseleave', () => {
+  hiddenIm.style.display = 'none';
+});
